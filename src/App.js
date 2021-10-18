@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import liff from '@line/liff'
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
 function App() {
 
@@ -40,7 +40,9 @@ const runApp = () => {
   }).catch(err => console.error(err));
 }
 
-
+useEffect(() => {
+  initLine();
+}, []);
 
   return (
     <div className="App">
