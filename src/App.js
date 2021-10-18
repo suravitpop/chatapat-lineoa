@@ -20,7 +20,7 @@ const logout = () =>{
 const initLine = () => {
   liff.init({ liffId: '1656200256-Zrp28MK5' }, () => {
     if (liff.isLoggedIn()) {
-      this.runApp();
+      runApp();
     } else {
       liff.login();
     }
