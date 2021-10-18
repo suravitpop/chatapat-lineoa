@@ -33,7 +33,6 @@ const runApp = () => {
   liff.getProfile().then(profile => {
     console.log(profile);
     SetDisplayName(profile.displayName);
-    SetIdToken(profile.idToken);
     SetPictureUrl(profile.pictureUrl);
     SetStatusMessage(profile.statusMessage);
     SetUserId(profile.userId);
