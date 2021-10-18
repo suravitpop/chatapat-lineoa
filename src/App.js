@@ -51,10 +51,10 @@ useEffect(() => {
 <div style={{ textalign: "center" }}>
   <h1>React with LINE Login</h1>
   <img src={pictureUrl} width="300px" height="300px"/>
-  <p style={{ textalign: "left", marginleft: "20%" }}><b>ID token: </b> { idToken }</p>
-  <p style={{ textalign: "left", marginleft: "20%" }}><b>Display name: </b> { displayName }</p>
-  <p style={{ textalign: "left", marginleft: "20%" }}><b>Status message: </b> { statusMessage }</p>
-  <p style={{ textalign: "left", marginleft: "20%" }}><b>User ID: </b> { userId }</p>
+  <p style={{ textAlign: "left", marginLeft: "20%", marginRight: "20%", wordBreak: "break-all"}}><b>ID token: </b> { idToken }</p>
+  <p style={{ textAlign: "left", marginLeft: "20%", marginRight: "20%", wordBreak: "break-all" }}><b>Display name: </b> { displayName }</p>
+  <p style={{ textAlign: "left", marginLeft: "20%", marginRight: "20%", wordBreak: "break-all" }}><b>Status message: </b> { statusMessage }</p>
+  <p style={{ textAlign: "left", marginLeft: "20%", marginRight: "20%", wordBreak: "break-all" }}><b>User ID: </b> { userId }</p>
 
   <button onClick={() => logout()} style={{width: "100%", height:30 }}>Logout</button>
 </div>
